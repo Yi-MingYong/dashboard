@@ -1,0 +1,17 @@
+node_modules
+dist
+*.tsbuildinfo
+public/data/
+.vercel
+.DS_Store
+# Cloudflare: local state and local secrets (DEV_ACCESS_EMAIL)
+.wrangler
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+# Raw data never belongs in the repository; publish it via Beheer.
+*.xlsx
+*.xlsm
+*.xls
+*.csv
+data/**/*.ris

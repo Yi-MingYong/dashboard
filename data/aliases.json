@@ -1,0 +1,10 @@
+{
+  "$comment": "Handmatige naamkoppelingen: schrijfwijze in de Pure-export -> schrijfwijze waaronder de persoon geteld wordt. Automatische samenvoeging (zelfde achternaam + passende voornaam/initialen) gebeurt al; voeg hier alleen gevallen toe die niet automatisch te herkennen zijn, zoals roepnamen. Hoofdletters en accenten maken niet uit.",
+  "aliases": {
+    "Eshuis, H.": "Eshuis, Rik",
+    "Poutré, la, J.A.": "La Poutré, Han",
+    "Traganos, Kostas": "Traganos, Konstantinos",
+    "Abouelrous, Abdelrahman Gehad Mamdouh": "Abouelrous, Abdo",
+    "Adali, Ege": "Adali, Onat Ege"
+  }
+}

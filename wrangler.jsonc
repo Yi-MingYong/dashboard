@@ -1,0 +1,27 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "isdashboard",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "preview_urls": true,
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      // EU jurisdiction: data is stored and processed in the EU only.
+      "database_name": "isdashboard",
+      "database_id": "3a23db17-f03e-422d-a35e-41dded5f1ce4"
+    }
+  ],
+  // ACCESS_TEAM_DOMAIN, ACCESS_AUD, ADMIN_EMAILS and ALLOWED_DOMAINS are set in the dashboard
+  // (Worker > Settings > Variables); keep_vars stops a deploy from removing them. Without them the API serves no data.
+  "keep_vars": true,
+  "observability": {
+    "enabled": true
+  }
+}

@@ -1,0 +1,5 @@
+# Copy to .dev.vars (not committed) for local development with `npm run dev:api`.
+# Only used for requests to localhost: you are treated as signed in with this address.
+DEV_ACCESS_EMAIL=beheerder@tue.nl
+ADMIN_EMAILS=beheerder@tue.nl
+ALLOWED_DOMAINS=tue.nl
